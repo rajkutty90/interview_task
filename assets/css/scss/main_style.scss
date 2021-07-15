@@ -1,0 +1,17 @@
+//config
+@import 'config/variables';  
+
+//mixin
+@import 'mixin/mixin';  
+
+//helper
+@import 'helper/animation';   
+
+//plugin
+@import 'plugin/datepicker';  
+
+
+//pages
+@import 'pages/register.scss',
+        'pages/common.scss',
+        'pages/dashboard';  

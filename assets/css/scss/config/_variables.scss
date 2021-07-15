@@ -1,0 +1,20 @@
+//-------------------- Base Colors --------------------//
+
+$body-color: #fff;
+$theme_primary: #0062cc;
+
+//-------------------- Line Height Variables --------------------//
+$line-height-base: 1.6;
+$line-height-large: 1.8;
+$line-height-none: 1;
+
+
+//-------------------- Font Sizes --------------------//
+$font-size-base: 16px;
+
+//-------------------- Responsive sizes -------------------- //
+$extra-large-device-width: 1370px; // Extra Large devices (desktops, less than 1370px)
+$large-device-width: 1198px; // Large devices (desktops, less than 1200px)
+$medium-device-width: 991px; // Medium devices (tablets, less than 992px)
+$small-device-width: 767px; // Small devices (landscape phones, less than 768px)
+$extra-small-device-width: 575px; // Extra small devices (portrait phones, less than 576px)

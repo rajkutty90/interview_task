@@ -1,0 +1,48 @@
+$baseFontSize: 16px;
+//-------------------- Font size Rem conversion --------//
+@function calculateRem($size) {
+    $remSize: $size / $baseFontSize;
+    @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+    font-size: $size; //Fallback in px
+    font-size: calculateRem($size);
+}
+
+@mixin fontSizeImport($size) {
+    font-size: $size !important; //Fallback in px
+    font-size: calculateRem($size) !important;
+}
+
+//-------------------- Responsive --------------------//
+@mixin extra-large-desktop {
+    @media (max-width: #{$extra-large-device-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: #{$large-device-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$medium-device-width}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$small-device-width}) {
+        @content;
+    }
+}
+
+@mixin extra-small-mobile {
+    @media (max-width: #{$extra-small-device-width}) {
+        @content;
+    }
+}
+
